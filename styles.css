@@ -1,0 +1,143 @@
+/* cwj, 8/7/2025, common css for tro-tro project */
+div.a {
+  font: 20px Arial, sans-serif;
+  background-color: black;
+  border: 50px;
+  padding: 10px;
+  color: yellow;
+  width: fit-content; 
+}
+/* adjust width to fit the saying */
+
+p.a {
+  font: 20px Arial, sans-serif;
+  background-color: black;
+  border: 50px;
+  padding: 10px;
+  color: yellow;
+  width: fill-content;  
+  margin: auto;
+} /* adjust width to fit the saying */
+p.bot {
+  font: 20px Arial, sans-serif;
+  background_color: eeeeee;
+  border: 75 px;
+  padding: 20 px;
+  color: yellow;
+  width: fil-content;  /* adjust to fit the saying */
+  margin: auto;
+}
+p.ablue {
+  font: 20px Arial, sans-serif;
+  background-color: white;
+  border-top: 20px;
+  border-bottom: 2px;
+  padding: 1px;
+  margin-bottom: 2px;
+  margin-top: 5px;
+  color: blue;
+  /* width: 750px; should not need this?  */
+}
+p.topp {
+  font: 20px Arial, sans-serif;
+  color: blue;
+  background-color: white;
+  border-top: 20 px;
+  border-bottom: 2 px;
+  padding: 20 px;
+  margin-bottom: 2 px;
+  margin-top: 5px;
+  /* width: fil-content;   adjust to fit the saying */
+  /* margin: auto; */
+}
+.definition-box {
+  display: none;
+  position: absolute;
+  background-color: #f9f900;
+  border: 2px solid green;
+  color: black;
+  border-radius: 10px;
+  font: 20px Arial, sans-serif;
+  padding: 10px;
+  z-index: 1;
+  width: 300px;
+}
+
+.word:hover .definition-box {
+  display: block;
+}
+
+.word {
+  position: relative;
+  display: inline-block;
+}
+
+ td { 
+  text-align: center;
+}
+
+table {
+   margin: auto;
+}
+div {
+   b: 5px;
+}
+
+td.twoway {
+   text-align: center;
+   width: 375px;
+}
+
+td.threeway {
+	text-align: center;
+	width: 250px;
+}
+
+td.fourway {
+	text-align: center;
+	width: 185px;
+}
+/* a:link, a:visited {
+  background-color: black;
+  color: yellow;
+} */
+
+div#myCustom {
+	transform: rotate(-30deg);
+}
+
+img.custom {
+	clip-path: circle(25%);
+}
+img.custom2 {
+	clip-path: ellipse(35% 35% at 40% 35%);
+	shape-outside: ellipse(35% 35% at 40% 35%);
+}
+img.custom3 {
+	clip-path: ellipse(35% 20% at 35% 25%);
+	shape-outside: ellipse(35% 20% at 35% 25%);
+}
+img.custom4 {
+	clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+	shape-outside: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+}
+img.custom5 {
+	clip-path: polygon(0% 0%, 90% 0%, 90% 75%, 0% 75%);
+	shape-outside: polygon(0% 0%, 90% 0%, 90% 75%, 0% 75%);
+	box-sizing: border-box;
+} <!- this trimming of bottom 30% of image used on the photo of a tricycle
+.image-container {
+  /* Set this to your desired final display height */
+  height: 250px; 
+  width: 380px;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  /* 'cover' ensures the image fills the container height */
+  object-fit: cover; 
+  /* 'top' ensures the bottom 30% is what gets cut off */
+  object-position: top; 
+}
